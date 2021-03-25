@@ -9,18 +9,20 @@ import UIKit
 
 class Database {
     
-    func load(fileID: Int) throws -> [DatabaseEntry] {
+    func load(fileID: Int) throws -> DatabaseEntry {
         let filepath = Bundle.main.path(forResource: "JSON-\(fileID)", ofType: "txt")!
         let fileURL = URL(fileURLWithPath: filepath)
         let fileData = try Data(contentsOf: fileURL)
-        let entries = try JSONDecoder().decode([DatabaseEntry].self, from: fileData)
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        let entries = try decoder.decode(DatabaseEntry.self, from: fileData)
         return entries
     }
     
 }
 
 struct DatabaseEntry : Codable {
-    let nextEntry: Int
+    let nextEntry: Int?
     let data: [DatabaseRow]
 }
 
