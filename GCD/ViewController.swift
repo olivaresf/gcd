@@ -31,14 +31,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loadAllEntries() {
-        let database = Database()
-        let begin = Date()
-        for index in 0...9 {
-            let entry = try? database.load(fileID: index)
-            print("Finished entry \(index)")
-        }
-        let end = Date()
-        print(end.timeIntervalSince(begin))
+        
     }
     
 }

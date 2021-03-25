@@ -8,10 +8,6 @@
 import UIKit
 
 class Database {
-
-    enum LoadError : Error {
-        case documentsDirNotFound
-    }
     
     func load(fileID: Int) throws -> [DatabaseEntry] {
         let filepath = Bundle.main.path(forResource: "JSON-\(fileID)", ofType: "txt")!
