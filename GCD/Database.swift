@@ -36,9 +36,20 @@ class Database {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let entries = try decoder.decode(DatabaseTable.self, from: fileData)
-                everythingIsDoneClosure(.success(entries))
+                
+                // Executing on the database queue
+                DispatchQueue.main.sync
+                {
+                    // Executing on the main queu
+                    everythingIsDoneClosure(.success(entries))
+                    print("2")
+                }
+                
+                print("1")
             } catch {
-                everythingIsDoneClosure(.failure(error))
+                DispatchQueue.main.async {
+                    everythingIsDoneClosure(.success(entries))
+                }
             }
         }
     } // Finishes execution
