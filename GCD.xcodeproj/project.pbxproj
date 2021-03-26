@@ -59,6 +59,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B3E4304260D5E8F001097FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B48E752260C64E100DB182C /* AppDelegate.swift */,
+				9B48E754260C64E100DB182C /* SceneDelegate.swift */,
+				9B48E758260C64E100DB182C /* Main.storyboard */,
+				9B48E75B260C64E200DB182C /* Assets.xcassets */,
+				9B48E75D260C64E200DB182C /* LaunchScreen.storyboard */,
+				9B48E760260C64E200DB182C /* Info.plist */,
+				9B48E768260C651900DB182C /* JSON-0.txt */,
+				9B48E76B260C651900DB182C /* JSON-1.txt */,
+				9B48E76D260C651900DB182C /* JSON-2.txt */,
+				9B48E76C260C651900DB182C /* JSON-3.txt */,
+				9B48E767260C651800DB182C /* JSON-4.txt */,
+				9B48E769260C651900DB182C /* JSON-5.txt */,
+				9B48E76A260C651900DB182C /* JSON-6.txt */,
+				9B48E76F260C651900DB182C /* JSON-7.txt */,
+				9B48E76E260C651900DB182C /* JSON-8.txt */,
+				9B48E770260C651900DB182C /* JSON-9.txt */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9B48E746260C64E100DB182C = {
 			isa = PBXGroup;
 			children = (
@@ -78,24 +101,9 @@
 		9B48E751260C64E100DB182C /* GCD */ = {
 			isa = PBXGroup;
 			children = (
-				9B48E752260C64E100DB182C /* AppDelegate.swift */,
-				9B48E754260C64E100DB182C /* SceneDelegate.swift */,
 				9B48E756260C64E100DB182C /* ViewController.swift */,
 				9B48E77C260C655900DB182C /* Database.swift */,
-				9B48E758260C64E100DB182C /* Main.storyboard */,
-				9B48E75B260C64E200DB182C /* Assets.xcassets */,
-				9B48E75D260C64E200DB182C /* LaunchScreen.storyboard */,
-				9B48E760260C64E200DB182C /* Info.plist */,
-				9B48E768260C651900DB182C /* JSON-0.txt */,
-				9B48E76B260C651900DB182C /* JSON-1.txt */,
-				9B48E76D260C651900DB182C /* JSON-2.txt */,
-				9B48E76C260C651900DB182C /* JSON-3.txt */,
-				9B48E767260C651800DB182C /* JSON-4.txt */,
-				9B48E769260C651900DB182C /* JSON-5.txt */,
-				9B48E76A260C651900DB182C /* JSON-6.txt */,
-				9B48E76F260C651900DB182C /* JSON-7.txt */,
-				9B48E76E260C651900DB182C /* JSON-8.txt */,
-				9B48E770260C651900DB182C /* JSON-9.txt */,
+				9B3E4304260D5E8F001097FC /* Supporting Files */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -332,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Q28B2MC2C;
-				INFOPLIST_FILE = GCD/Info.plist;
+				INFOPLIST_FILE = "GCD/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Q28B2MC2C;
-				INFOPLIST_FILE = GCD/Info.plist;
+				INFOPLIST_FILE = "GCD/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
